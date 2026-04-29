@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNDP SDG Local Action - Data Visualizations</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #005587; /* UNDP Blue */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 15px 0 0 0;
+            font-size: 18px;
+            color: #e0f2fe;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        /* Menu Grid Container */
+        .menu-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Clickable Card Styling */
+        .card-link {
+            text-decoration: none; /* Removes underline from links */
+            color: inherit;
+            display: block;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+            transition: all 0.3s ease-in-out;
+            border-top: 5px solid #005587; /* UNDP Blue accent line */
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Card Hover Effects */
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+            border-top-color: #00bee6; /* Light blue on hover */
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #005587;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+            flex-grow: 1; /* Pushes the button to the bottom */
+        }
+
+        /* "View Chart" Button Styling */
+        .view-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #005587;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .card:hover .view-btn {
+            background-color: #00bee6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>UNDP SDG Local Action</h1>
+        <p>Select a visualization below to view the interactive data full-screen.</p>
+    </header>
+
+    <div class="menu-container">
+        
+        <!-- Link 1: KPIs -->
+        <a href="results_website_kpis.html" class="card-link">
+            <div class="card">
+                <h2>Website Reach & Audience</h2>
+                <p>Animated key performance indicators (KPIs) showcasing total website views and the number of active users.</p>
+                <span class="view-btn">View Chart &rarr;</span>
+            </div>
+        </a>
+
+        <!-- Link 2: Social Media -->
+        <a href="results_social_media.html" class="card-link">
+            <div class="card">
+                <h2>Social Media Outreach</h2>
+                <p>An interactive bar chart detailing the total views across LinkedIn, YouTube, and X (Twitter).</p>
+                <span class="view-btn">View Chart &rarr;</span>
+            </div>
+        </a>
+
+        <!-- Link 3: Learning Engagement -->
+        <a href="results_learning_engagement.html" class="card-link">
+            <div class="card">
+                <h2>Learning & Engagement Impact</h2>
+                <p>A horizontal bar chart breaking down trained representatives, webinar participants, and institutional partners.</p>
+                <span class="view-btn">View Chart &rarr;</span>
+            </div>
+        </a>
+
+        <!-- Link 4: Content Creation -->
+        <a href="results_content_bubbles.html" class="card-link">
+            <div class="card">
+                <h2>Rich Content Output</h2>
+                <p>A floating bubble chart visualizing the volume of published news articles, stories, infographics, and webinars.</p>
+                <span class="view-btn">View Chart &rarr;</span>
+            </div>
+        </a>
+
+        <!-- Link 5: Knowledge Generation -->
+        <a href="results_knowledge_generation.html" class="card-link">
+            <div class="card">
+                <h2>Knowledge Generation</h2>
+                <p>A donut chart categorizing the 20 published guidelines into thematic guidelines and city case innovations.</p>
+                <span class="view-btn">View Chart &rarr;</span>
+            </div>
+        </a>
+
+    </div>
+
+    <footer>
+        &copy; 2026 UNDP SDG Local Action. All rights reserved.
+    </footer>
+
+</body>
+</html>
